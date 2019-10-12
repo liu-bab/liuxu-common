@@ -23,7 +23,7 @@ public class StreamUtilTest {
 
 	@Test
 	public void testReadTextFileFile() {
-		
+		StreamUtil.readTextFile(new File("e:/date.txt"));
 	}
 
 }
