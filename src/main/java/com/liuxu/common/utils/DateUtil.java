@@ -15,6 +15,19 @@ public class DateUtil {
 	* 则返回的结果为2019-05-01 00:00:00
 	*/
 	
+public static Date getDate(Date minDate ,Date maxDate) {
+		
+		//最小毫米数
+		long min = minDate.getTime();
+		long max = maxDate.getTime();
+	
+		long x =(long) ((Math.random() * (max -min +1)) +min);
+		
+		
+		return new Date(x);
+		
+	}
+	
 	// 返回月初得日期
 	
 	public static Date getDateByInitMonth(Date src){
